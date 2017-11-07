@@ -1,0 +1,25 @@
+{
+  "name": "china-area-array",
+  "version": "1.0.0",
+  "description": "中国省市区数据源以及转换为一维数组算法（可扩展）",
+  "main": "dist/china-area-array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zenfeder/china-area-array.git"
+  },
+  "keywords": [
+    "china",
+    "area",
+    "data",
+    "array"
+  ],
+  "author": "Zenfeder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zenfeder/china-area-array/issues"
+  },
+  "homepage": "https://github.com/Zenfeder/china-area-array#readme"
+}
