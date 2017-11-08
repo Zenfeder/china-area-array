@@ -1,4 +1,6 @@
 const fs = require('fs')
+const path = require('path')
+const outputFile = path.resolve(__dirname, '../dist/china-area-array.js')
 const chinaData = require('./data')
 let chinaDataConvert = []
 
@@ -36,7 +38,7 @@ provinceList.forEach((provinceItem) => {
 		if (cityhasArea) {
 			let areaItemOther = {
 				'value': cityKey.slice(0,4) + '99',
-				'name': '其他区',
+				'name': '其他',
 				'parent': cityKey
 			}
 			chinaDataConvert.push(areaItemOther)
@@ -51,7 +53,7 @@ provinceList.forEach((provinceItem) => {
 	}
 })
 
-fs.writeFile('../dist/china-area-array.js', 'module.exports = ' + JSON.stringify(chinaDataConvert, null, 4), 'utf8', (err) => {
+fs.writeFile(outputFile, 'module.exports = ' + JSON.stringify(chinaDataConvert, null, 4), 'utf8', (err) => {
 	if (err) {
 		console.log(err)
 	}
