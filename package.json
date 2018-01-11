@@ -1,10 +1,10 @@
 {
   "name": "china-area-array",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "中国省市区数据源以及转换为一维数组算法（可扩展）",
   "main": "dist/china-area-array.js",
   "scripts": {
-    "convert": "node src/convert.js"
+    "start": "node src/convert.js && gulp"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/Zenfeder/china-area-array/issues"
   },
-  "homepage": "https://github.com/Zenfeder/china-area-array#readme"
+  "homepage": "https://github.com/Zenfeder/china-area-array#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0"
+  }
 }
